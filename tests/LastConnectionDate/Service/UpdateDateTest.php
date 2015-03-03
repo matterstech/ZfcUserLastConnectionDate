@@ -27,7 +27,7 @@ class UpdateDateTest extends \PHPUnit_Framework_TestCase{
     }
 
     /**
-     * @expectedException \Exception
+     * @expectedException \RunTimeException
      */
     public function testExceptionMapper(){
 
@@ -35,7 +35,7 @@ class UpdateDateTest extends \PHPUnit_Framework_TestCase{
     }
 
     /**
-     * @expectedException \Exception
+     * @expectedException \RuntimeException
      */
     public function testExceptionUserId(){
         $this->instance->updateDateFromIdUser('dummy param', $this->zfcMapper);
