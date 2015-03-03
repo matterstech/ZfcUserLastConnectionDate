@@ -1,0 +1,1 @@
+ALTER TABLE 'user' ADD 'last_connection_date' TIMESTAMP DEFAULT NULL;
