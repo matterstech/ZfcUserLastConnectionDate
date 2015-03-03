@@ -18,7 +18,7 @@ class UpdateDate {
      */
     public function updateDateFromIdUser($userId, $zfcMapper){
 
-        if($zfcMapper instanceof UserZendDb){
+        if(!$zfcMapper instanceof UserZendDb){
            throw new \Exception('Invalid Mapper passed to lastConnectionDate update service');
         }
         if(!$userId ||  !is_int($userId)){
