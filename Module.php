@@ -1,9 +1,6 @@
 <?php
 namespace LastConnectionDate;
 
-
-use LastConnectionDate\Entity\User;
-
 class Module
 {
     public function getConfig()
@@ -30,7 +27,7 @@ class Module
 
         $events->attach('ZfcUser\Authentication\Adapter\AdapterChain', 'authenticate.success', function($e) use($sm) {
             $userId = $e->getIdentity();
-            if($userId){
+            if ($userId) {
                 $zfcMapper = $sm->get('zfcuser_user_mapper');
                 $updateDateService = $sm->get('last_connection_date_updateDate_service');
                 $isUpdatedDate = $updateDateService->updateDateFromIdUser($userId, $zfcMapper);

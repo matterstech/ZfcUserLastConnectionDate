@@ -5,13 +5,11 @@
  * Date: 3/2/15
  * Time: 6:21 PM
  */
-
-namespace LastConnectionDate\Entity;
-
+namespace ZfcUserLastConnectionDate\Entity;
 
 use ZfcUser\Entity\User as ZfcUser;
 
-class User extends ZfcUser{
+class LastConnectionDateUser extends ZfcUser {
 
 use LastConnectionTrait;
 

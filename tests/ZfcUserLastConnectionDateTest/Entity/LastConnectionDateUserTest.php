@@ -5,16 +5,16 @@
  * Date: 3/3/15
  * Time: 5:17 PM
  */
-namespace LastConnectionDate\Entity;
+namespace ZfcUserLastConnectionDate\Entity;
 use PHPUnit_Framework_TestCase;
 
-class UserTest extends PHPUnit_Framework_TestCase {
+class LastConnectionDateUserTest extends PHPUnit_Framework_TestCase {
 
     protected $instance;
 
     public function setUp()
     {
-        $instance = new User();
+        $instance = new LastConnectionDateUser();
         $this->instance = $instance;
     }
 

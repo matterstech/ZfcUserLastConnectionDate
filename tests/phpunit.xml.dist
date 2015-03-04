@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<phpunit bootstrap="Bootstrap.php">
-    <testsuites>
-        <testsuite name="zfc_user_last_connection_date">
-            <directory>./LastConnectionDate</directory>
-        </testsuite>
-    </testsuites>
-</phpunit>

@@ -1,12 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: mohamed.benaida
- * Date: 3/3/15
- * Time: 11:12 AM
- */
+    /**
+     * Created by PhpStorm.
+     * User: mohamed.benaida
+     * Date: 3/3/15
+     * Time: 11:12 AM
+     */
 
-namespace LastConnectionDate\Entity;
+namespace ZfcUserLastConnectionDate\Entity;
 
 trait LastConnectionTrait {
 

@@ -5,7 +5,7 @@
  * Date: 3/3/15
  * Time: 2:15 PM
  */
-namespace LastConnectionDate\Service;
+namespace ZfcUserLastConnectionDate\Service;
 
 class UpdateDateTest extends \PHPUnit_Framework_TestCase{
 
