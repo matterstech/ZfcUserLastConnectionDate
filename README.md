@@ -16,7 +16,7 @@ For more informations about ZfcUser : [ZfcUser](https://github.com/ZF-Commons/Zf
 
 
 Requirements
-------------git add 
+------------
 
 * [Zend Framework 2](https://github.com/zendframework/zf2) (latest master)
 * [ZfcBase](https://github.com/ZF-Commons/ZfcBase) (latest master).
