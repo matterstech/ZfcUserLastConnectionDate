@@ -26,7 +26,7 @@ class UpdateDate {
         }
 
         /**
-         * @var $user \LastConnectionDate\Entity\User
+         * @var $user \ZfcUserLastConnectionDate\Entity\LastConnectionDateUser
          */
         $user = $zfcMapper->findById($userId);
 
