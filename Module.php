@@ -1,5 +1,5 @@
 <?php
-namespace LastConnectionDate;
+namespace ZfcUserLastConnectionDate;
 
 class Module
 {
