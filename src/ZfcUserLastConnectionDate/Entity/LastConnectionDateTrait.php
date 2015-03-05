@@ -8,7 +8,7 @@
 
 namespace ZfcUserLastConnectionDate\Entity;
 
-trait LastConnectionTrait {
+trait LastConnectionDateTrait {
 
     /**
      * @var \DateTime

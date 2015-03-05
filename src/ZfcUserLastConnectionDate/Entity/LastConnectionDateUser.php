@@ -9,8 +9,8 @@ namespace ZfcUserLastConnectionDate\Entity;
 
 use ZfcUser\Entity\User as ZfcUser;
 
-class LastConnectionDateUser extends ZfcUser {
+class LastConnectionDateUser extends ZfcUser implements LastConnectionDateSettableInterface {
 
-use LastConnectionTrait;
+    use LastConnectionDateTrait;
 
 }

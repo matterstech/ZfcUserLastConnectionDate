@@ -6,7 +6,7 @@
  * Time: 7:03 PM
  */
 namespace ZfcUserLastConnectionDate\Service;
-use ZfcUserLastConnectionDate\Entity\LastConnectionDateUser;
+use ZfcUserLastConnectionDate\Entity\LastConnectionDateSettableInterface;
 use ZfcUserAdmin\Mapper\UserZendDb;
 
 class UpdateDate {
@@ -30,7 +30,7 @@ class UpdateDate {
          */
         $user = $zfcMapper->findById($userId);
 
-        if ($user instanceof LastConnectionDateUser) {
+        if ($user instanceof LastConnectionDateSettableInterface) {
             $dateTime = new \DateTime('NOW');
             $lastDate = $dateTime->format(\DateTime::ISO8601);
             $user->setLastConnectionDate($lastDate);
