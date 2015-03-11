@@ -20,28 +20,26 @@ class UpdateDateTest extends \PHPUnit_Framework_TestCase{
      */
     private $zfcMapper;
 
-    public function setUp(){
-
+    public function setUp()
+    {
         $this->instance = new UpdateDate();
-        $this->zfcMapper = $this->getMock('\LastConnectionDate\Service\UpdateDate');
-    }
-
-    /**
-     * @expectedException \RunTimeException
-     */
-    public function testExceptionMapper(){
-
-        $this->instance->updateDateFromIdUser('hello', 'world');
     }
 
     /**
      * @expectedException \RuntimeException
      */
-    public function testExceptionUserId(){
-        $this->instance->updateDateFromIdUser('dummy param', $this->zfcMapper);
+    public function testExceptionUserId()
+    {
+        $mock = $this->getMock('\ZfcUser\Mapper\User');
+        $this->instance->updateDateFromIdUser('dummy param', $mock);
     }
 
+    public function testNoExceptionMapperUsingInterface() 
+    {
+	$mock = $this->getMockBuilder('\ZfcUser\Mapper\UserInterface')
+	    ->disableOriginalConstructor()
+	    ->getMock();
 
-
-
+        $this->assertFalse($this->instance->updateDateFromIdUser(1, $mock));
+    }
 }

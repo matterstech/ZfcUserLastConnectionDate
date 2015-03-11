@@ -7,7 +7,8 @@
  */
 namespace ZfcUserLastConnectionDate\Service;
 use ZfcUserLastConnectionDate\Entity\LastConnectionDateSettableInterface;
-use ZfcUserAdmin\Mapper\UserZendDb;
+use ZfcUser\Mapper\UserInterface;
+
 
 class UpdateDate {
     /**
@@ -18,7 +19,8 @@ class UpdateDate {
      */
     public function updateDateFromIdUser($userId, $zfcMapper) {
 
-        if (!$zfcMapper instanceof UserZendDb) {
+
+        if (!$zfcMapper instanceof UserInterface) {
             throw new \RuntimeException('Invalid Mapper passed to lastConnectionDate update service');
         }
         if (!$userId ||  !is_int($userId)) {
