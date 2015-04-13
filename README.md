@@ -93,3 +93,9 @@ Navigate to http://yourproject/user/login.
 Configuration
 -----------------------
 There is nothing to configure !
+
+
+
+## License
+
+ZfcLastConnectionDate is released under the [MIT License](http://www.opensource.org/licenses/MIT).
