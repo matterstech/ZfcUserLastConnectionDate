@@ -1,7 +1,7 @@
 {
   "name": "inovia-team/zfc-user-last-connection-date",
   "description": "Last connection date for ZfcUser module ",
-  "license": "",
+  "license": "MIT",
   "keywords": [
     "ZfcUser last connection",
     "zfcUser connection date"
